@@ -118,14 +118,16 @@ function Baby(name, age, favoriteToy) {
     return `Playing with ${this.favoriteToy}`;
   };
 }
+const daBaby = new Baby("Da Baby", "69", "30 racks");
+console.log(daBaby);
 
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. 
-  2. 
-  3. 
-  4. 
+  1. window/global object binding: this should be avoided and is considered an error 
+  2. implicit binding: function uses 'this' this keyword and the binding is made once the function is invoked. whatever comes before the dot in the invocation is what 'this' becomes.
+  3. new binding: when a construtor function is called with the 'new' keyword, 'this' points to the new object
+  4. explicit binding: we clearly define 'this' when using the call or apply method.
 */
 
 ///////// END OF CHALLENGE /////////
